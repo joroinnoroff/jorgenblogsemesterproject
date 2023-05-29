@@ -1,0 +1,277 @@
+#loading {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+#content {
+  display: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
+header {
+
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+header a{
+  text-decoration: none;
+  width: 40%;
+  font-weight: 700;
+  
+}
+h1 {
+  margin: 0;
+}
+header h1{
+  background-color: #ff8600;
+  color: #f7d5b1;
+  border-radius: 10px;
+ text-align: center;
+  
+}
+
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  margin-bottom: 5px;
+  position: relative;
+  background: rgb(0, 0, 0);
+  border-radius: 3px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu a {
+  color: #14b5f4;
+  text-decoration: none;
+  font-size: 18px;
+  
+}
+.menu a:hover{
+  border-bottom: 1.5px solid #ccc;
+  transition: 400ms ease;
+  color: #2c3950;
+}
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 4px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  display: none;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(1px, -1px);
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+header .subBtn{
+  display: none;
+}
+
+  .menu {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    background-color: #000000;
+  }
+  .menu a{
+    color: #fff;
+  }
+
+  .menu li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu li:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu.active {
+    display: block;
+  }
+}
+
+/*end of Nav - header */
+
+
+.company{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.company h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+.text-con h2{
+  border-bottom: 1px solid;
+}
+.text-con h3{
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.text-con h3 span{
+  font-weight: 800  ;
+}
+
+
+.text-con{
+  border: 1px solid;
+  font-family: poppins;
+  margin: 0 0 15px;
+  text-align: center;
+  padding: 10px;
+  width: 57%;
+  
+}
+@media screen and (max-width:1000px) {
+  .text-con{
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+}
+
+video{
+  width: 600px;
+}
+.subscribe{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  
+}
+.subscribe h5{
+  font-weight: 200;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+button{
+  border: none;
+  background-color: rgb(67, 195, 255);
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.subBtn{cursor: pointer;}
+button a{
+  color: rgb(229, 229, 229);
+}
+button a:hover{
+  color: #fff;
+  transition: 400ms ease;
+}
+
+@media screen and (max-width: 768px) {
+   video{
+    width: 335px;
+  }
+}
+  /*FOOTER**/
+
+
+  footer{
+    background-color: #a7bede;
+    width: 100%;
+    display: flex;
+    border-radius: 2px;
+ 
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+  footer a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    gap: 3px;
+    display: flex;
+    color: rgb(52, 52, 52);
+  }
+  footer a:hover{
+    color: #000;
+  }
+  .contact button {
+    color: #ffffff;
+  }
+
+  .footer-container{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  ul{
+    list-style: none;
+    padding: 2px 2px;
+  }
+
+  ul li:nth-child(1):hover{
+    margin-left: 5px;
+   transition: all 400ms ease 0s;
+  }
+  ul li:nth-child(2):hover{
+    margin-left: 5px;
+transition: all 400ms ease 0s;
+  }
+  ul li:nth-child(3):hover{
+    margin-left: 5px;
+    transition: all 400ms ease 0s;
+  }
+
+@media screen and (max-width:900px) {
+  .footer-container{
+    gap: 10px;
+    flex-direction: column;
+     
+  }
+}

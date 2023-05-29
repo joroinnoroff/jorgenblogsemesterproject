@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrainThink HomePage - JO NorOff Exam 1</title>
+    <link rel="icon" type="image/png" href="/images/brain-solid.svg" />
+
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/homepage.css" />
+
+    <!-- Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SWIPER CDN-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--HOTJAR-->
+    <!-- Hotjar Tracking Code for https://funny-kringle-b8be3e.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3504174, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><h1><i class="fa-solid fa-brain"></i>Think</h1></a
+      >
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu">
+        <li><a href="/blog.html">Blog</a></li>
+
+        <li><a href="/about.html">About us</a></li>
+        <li><a href="/contact.html">Contact us</a></li>
+      </ul>
+
+      <button class="subBtn pop-on-hover">
+        <a href="#">SUBSCRIBE</a>
+      </button>
+    </header>
+    <hr />
+    <main>
+      <div class="hero">
+        <div class="middle-wrapper">
+          <div class="trending pulsingButton">
+            <h3 class="">
+              LATEST POSTS
+              <span><i class="fa-solid fa-satellite-dish"></i></span>
+            </h3>
+          </div>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="loading"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+
+          <hr />
+
+          <div class="all-articlesbTn">
+            <a href="#2" class="r">
+              <span>View All Articles Here </span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+
+          <section class="blog-section" id="1">
+            <div class="wrapper">
+              <div class="blogpost-wrapper">
+                <div class="left-col">
+                  <div class="article-left">
+                    <h3>Todays Picks</h3>
+                    <div class="articles" id="left-container">
+                      <div class="row">
+                        <article class="holder">
+                          <a href="humanvsai.html"
+                            ><img src="images/humanvsai.jpg" alt=""
+                          /></a>
+                          <a href="humanvsai.html">
+                            <h2 class="title">
+                              How good is enough? AI vs. human code
+                            </h2>
+                          </a>
+                          <p>
+                            Published by Marc Luettecke, Nikolas Rist and Tom
+                            Gehder on 16 Dec 2022/ Data-science, Training
+                          </p>
+                        </article>
+                        <article class="holder">
+                          <a href="/javatime.html"
+                            ><img src="images/hmp.jpg" alt=""
+                          /></a>
+                          <a href="javatime.html">
+                            <h2 class="title">
+                              Guideline to basic java.time date/time classes
+                            </h2>
+                          </a>
+                          <p>Published by Dirk L.</p>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="middle-col">
+                  <article class="mid">
+                    <a href="greensoftware.html"
+                      ><img src="images/greensoftware.png" alt=""
+                    /></a>
+                    <span class="about"
+                      >Environmental <i class="fa-solid fa-seedling"></i
+                    ></span>
+                    <a href="greensoftware.html">
+                      <h1 class="title">
+                        Building a Sustainable Future with Green Software
+                        Engineering
+                      </h1>
+                    </a>
+                    <p>
+                      The increasing demand for software products and services
+                      is contributing to a growing carbon footprint in the tech
+                      industry. Data centres consume about 2% of global
+                      electricity today. By 2030, they could consume as much as
+                      8%.
+                    </p>
+
+                    <br />
+                    <div class="btn-container">
+                      <button class="read pop-on-hover">
+                        <a href="greensoftware.html">Read More</a>
+                      </button>
+                    </div>
+                    <p>
+                      <span class="about">
+                        This article helps you realize the need for green
+                        software engineering and how it can help build a
+                        sustainable future
+                      </span>
+                    </p>
+                    <p>
+                      <span class="about"
+                        >Published by Rajesh Ranjan Mohanty on 02 Mar
+                        2023 / Culture</span
+                      >
+                    </p>
+                  </article>
+                </div>
+
+                <div class="right-col">
+                  <h3>MOST RECENT</h3>
+                  <div id="right-articles">
+                    <div class="right" id="article">
+                      <a href="">
+                        <h5 class="post-title"></h5>
+                      </a>
+                      <a href="#">
+                        <img src="" id="img-fetched" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <br />
+        <section class="all-posts" id="2">
+          <h1>All Articles</h1>
+
+          <div class="wrapper-allposts">
+            <select id="categoryFilter">
+              <option value="all">All</option>
+              <option value="technology">Technology releases</option>
+              <option value="webDesign">Web Design</option>
+              <option value="trending">Trending</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Search here..." />
+
+            <div class="" id="article-container">
+              <!--  <a href="" class="image-holder"><img src="" alt="" /></a>
+            <a href="">
+              <h2 class="article-title"></h2>
+            </a>
+            <h5 class="short-desc"></h5>
+            <p></p>
+              -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <a href="index.html"
+          ><h4><i class="fa-solid fa-brain"></i>Think</h4></a
+        >
+        <button class="backttop pop-on-hover">
+          <i class="fa-solid fa-arrow-up"></i>Back to The Top
+        </button>
+        <div class="editor">
+          <h5>
+            Front Page Editor:
+            <span>J.Oino</span>
+          </h5>
+
+          <small>Jon@Email.com</small>
+        </div>
+
+        <div class="contact">
+          <a href="contact.html">
+            <h5>Do You Have a Story?</h5>
+            <a href="contact.html">
+              <button class="pop-on-hover">
+                Contact Us Here<i class="fa-solid fa-envelope"></i>
+              </button>
+            </a>
+          </a>
+        </div>
+
+        <div class="fqa">
+          <h5>FQA</h5>
+          <ul>
+            <li>
+              <a href="/about.html"
+                ><i class="fa-solid fa-chevron-right"></i>About Us</a
+              >
+            </li>
+            <li>
+              <a href="/contact.html"
+                ><i class="fa-solid fa-chevron-right"></i>Contribute with
+                Content</a
+              >
+            </li>
+            <li>
+              <a href="/about.html"
+                ><i class="fa-solid fa-chevron-right"></i>Publishing Rights</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Select the container element to display the results
+      const resultsContainer = document.querySelector(".swiper-wrapper");
+      const loadingIndicator = document.querySelector(".loading");
+      const swiperContainer = document.querySelector(".swiper");
+
+      // Fetch the post data from the API endpoint for each post ID
+      const postIds = [71, 69, 67, 65, 63, 61, 59, 57, 55, 53, 35, 33, 30];
+
+      let swiper; // Variable to hold the Swiper instance
+
+      async function fetchData() {
+        try {
+          let slidesHTML = "";
+
+          for (const postId of postIds) {
+            loadingIndicator.style.display = "block";
+
+            const postResponse = await fetch(
+              `https://excitable-breath.flywheelsites.com/wp-json/wp/v2/posts/${postId}`
+            );
+            const postData = await postResponse.json();
+
+            const mediaSourceUrl = getMediaSourceUrlFromContent(
+              postData.content.rendered
+            );
+
+            const slideHTML = `
+        <div class="swiper-slide">
+          <h2>${postData.title.rendered}</h2>
+          <img class="swiper-image" src="${mediaSourceUrl}" alt="Slide Image">
+          <p>${postData.excerpt.rendered}</p>
+        </div>
+      `;
+
+            slidesHTML += slideHTML;
+          }
+
+          resultsContainer.innerHTML = slidesHTML;
+
+          // Hide the loading indicator after all slides are loaded
+          loadingIndicator.style.display = "none";
+
+          // Initialize Swiper after all slides are loaded
+          swiper = new Swiper(".swiper", {
+            // Configure Swiper options here...
+            pagination: {
+              el: ".swiper-pagination",
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            scrollbar: {
+              el: ".swiper-scrollbar",
+            },
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            speed: 1000, // Adjust the speed here (e.g., 1000ms for 1 second)
+          });
+
+          // Add event listeners for mouse hover
+          swiperContainer.addEventListener("mouseenter", pauseAutoplay);
+          swiperContainer.addEventListener("mouseleave", startAutoplay);
+        } catch (error) {
+          console.log("Error fetching data:", error);
+        }
+      }
+
+      // Extract the media source URL from the post content
+      function getMediaSourceUrlFromContent(content) {
+        const urlRegex = /src="([^"]+)"/i;
+        const match = content.match(urlRegex);
+        return match ? match[1] : "";
+      }
+
+      // Function to pause autoplay
+      function pauseAutoplay() {
+        if (swiper && swiper.autoplay) {
+          swiper.autoplay.stop();
+        }
+      }
+
+      // Function to start autoplay
+      function startAutoplay() {
+        if (swiper && swiper.autoplay) {
+          swiper.autoplay.start();
+        }
+      }
+
+      fetchData();
+
+      //END OF SWIPER
+      // ROTATE DOWN
+      const link = document.querySelector(".all-articlesbTn .r");
+      const arrowIcon = document.querySelector(
+        ".all-articlesbTn .fa-solid.fa-chevron-right"
+      );
+
+      link.addEventListener("click", function (event) {
+        if (!arrowIcon.classList.contains("rotate-down")) {
+        }
+        arrowIcon.classList.toggle("rotate-down");
+        // perform any additional actions here
+      });
+
+      // LEFT ARTICLES
+      const leftPosts = [61, 92];
+      const leftContainer = document.querySelector("#left-container");
+
+      async function fetchLeftData() {
+        try {
+          for (let i = 0; i < leftPosts.length; i++) {
+            const postId = leftPosts[i];
+            const articleEl = document.createElement("article");
+            articleEl.classList.add("loading");
+
+            const response = await fetch(
+              `https://excitable-breath.flywheelsites.com/wp-json/wp/v2/posts/${postId}`
+            );
+            const data = await response.json();
+
+            const {
+              title,
+              content: { rendered },
+              excerpt: { rendered: excerptRendered },
+            } = data;
+
+            articleEl.innerHTML = `
+        <a href="${postId === 61 ? "amazon.html" : "development.html"}"><h1>${
+              title.rendered
+            }</h1></a>
+        <p>${excerptRendered}</p>
+      `;
+
+            articleEl.classList.remove("loading");
+            leftContainer.appendChild(articleEl);
+          }
+        } catch (error) {
+          leftContainer.innerHTML = `<p>Error fetching post data: ${error}</p>`;
+        }
+      }
+
+      fetchLeftData();
+
+      // RIGHT MOST RECENT
+      // Select the container element to display the results
+      const articleContainer = document.querySelector("#article");
+
+      const rightIds = [92, 95, 98];
+
+      rightIds.forEach((rightId) => {
+        // Create a post container for each post
+        const postContainer = document.createElement("div");
+        postContainer.className = "right-postcontainer";
+
+        // Fetch the post data from the API endpoint
+        fetch(
+          `https://excitable-breath.flywheelsites.com/wp-json/wp/v2/posts/${rightId}`
+        )
+          .then((response) => response.json()) // parse the response as JSON
+          .then((data) => {
+            // Extract the title, content, and link from the response data
+            const { title, content, link } = data;
+
+            // Create the title element
+            const titleEl = document.createElement("h5");
+            titleEl.className = "post-title";
+            titleEl.innerHTML = title.rendered;
+
+            // Create the link element for the title
+            const titleLink = document.createElement("a");
+            titleLink.href = link;
+            titleLink.appendChild(titleEl);
+
+            // Create the image element
+            const imgEl = document.createElement("img");
+            imgEl.src = "";
+            imgEl.id = "img-fetched";
+            imgEl.alt = "";
+
+            // Check if an image exists in the content
+            const imgTag = content.rendered.match(/<img[^>]+>/i);
+            if (imgTag) {
+              const imgSrc = imgTag[0].match(/src=["']([^"']+)/i);
+              if (imgSrc) {
+                imgEl.src = imgSrc[1];
+              }
+            }
+
+            // Create the link element for the image
+            const imgLink = document.createElement("a");
+            imgLink.href = link;
+            imgLink.appendChild(imgEl);
+
+            // Set the HTML content for the post container
+            postContainer.innerHTML = `
+        ${titleLink.outerHTML}
+        ${imgLink.outerHTML}
+      `;
+
+            // Append the post container to the article container
+            articleContainer.innerHTML += postContainer.outerHTML;
+          })
+          .catch((error) => {
+            console.error("Error fetching post data:", error);
+            postContainer.innerHTML = `<p>Error fetching post data: ${error}</p>`;
+            articleContainer.innerHTML += postContainer.outerHTML;
+          });
+      });
+
+      // right ARTICLES
+      const rightPosts = [59, 57];
+      const rightCon = document.querySelector(".right-col");
+
+      async function fetchRightData() {
+        try {
+          for (let i = 0; i < rightPosts.length; i++) {
+            const postId = rightPosts[i];
+            const articleEl = document.createElement("article");
+            articleEl.classList.add("loading");
+
+            const response = await fetch(
+              `https://excitable-breath.flywheelsites.com/wp-json/wp/v2/posts/${postId}`
+            );
+            const data = await response.json();
+
+            const {
+              title,
+              content: { rendered },
+              excerpt: { rendered: excerptRendered },
+            } = data;
+
+            articleEl.innerHTML = `
+        <a href="${postId === 59 ? "privacy.html" : "samsung.html"}"><h1>${
+              title.rendered
+            }</h1></a>
+        <p>${excerptRendered}</p>
+      `;
+
+            articleEl.classList.remove("loading");
+            rightCon.appendChild(articleEl);
+          }
+        } catch (error) {
+          rightCon.innerHTML = `<p>Error fetching post data: ${error}</p>`;
+        }
+      }
+
+      fetchRightData();
+
+      //ALL ARTICLES
+
+      const allarticleContainer = document.querySelector("#article-container");
+      const allIds = [
+        24, 71, 69, 67, 65, 63, 61, 59, 57, 55, 53, 35, 33, 30, 84, 92, 95, 98,
+      ];
+      const categoryMap = {
+        35: "technology",
+        30: "technology",
+        67: "technology",
+        65: "technology",
+        63: "technology",
+        61: "technology",
+        59: "technology",
+        84: "webDesign",
+        95: "webDesign",
+        98: "webDesign",
+        92: "webDesign",
+        69: "webDesign",
+        71: "trending",
+        57: "trending",
+        53: "trending",
+        55: "Trending",
+        33: "Trending",
+        24: "Trending",
+      };
+
+      const fetchPromises = allIds.map((allId) => {
+        return fetch(
+          `https://excitable-breath.flywheelsites.com/wp-json/wp/v2/posts/${allId}`
+        )
+          .then((response) => response.json())
+          .catch((error) => {
+            console.error("Error fetching post data:", error);
+            return { error: true, message: error };
+          });
+      });
+
+      Promise.all(fetchPromises)
+        .then((dataList) => {
+          dataList.forEach((data, index) => {
+            const allId = allIds[index];
+            const allContainer = document.createElement("div");
+            allContainer.className = "article-holder";
+            allContainer.id = allId;
+
+            if (data.error) {
+              allContainer.innerHTML = `<p>Error fetching post data: ${data.message}</p>`;
+            } else {
+              const { title, content, link } = data;
+              const imgTag = content.rendered.match(/<img[^>]+>/i);
+              const imgSrc = imgTag
+                ? imgTag[0].match(/src=["']([^"']+)/i)
+                : null;
+
+              allContainer.innerHTML = `
+          <a href="${link}">
+            <h5 class="post-title">${title.rendered}</h5>
+          </a>
+          <a href="${link}">
+            <img src="${imgSrc ? imgSrc[1] : ""}" id="img-fetched" alt="">
+          </a>
+        `;
+            }
+
+            allarticleContainer.appendChild(allContainer);
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching post data:", error);
+        });
+
+      document
+        .getElementById("categoryFilter")
+        .addEventListener("change", filterItems);
+
+      function filterItems() {
+        const selectedCategory =
+          document.getElementById("categoryFilter").value;
+        const items = document.getElementsByClassName("article-holder");
+
+        for (let i = 0; i < items.length; i++) {
+          const item = items[i];
+          const categoryId = parseInt(item.id);
+          const itemCategory = categoryMap[categoryId];
+          item.style.display =
+            selectedCategory === "all" || itemCategory === selectedCategory
+              ? "block"
+              : "none";
+        }
+      }
+    </script>
+    <script src="javascript/menutoggle.js"></script>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
