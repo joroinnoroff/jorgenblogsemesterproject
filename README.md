@@ -7,8 +7,7 @@ Every page has a navigation where user can select options from; -Blog -About us 
 this navigation turns into a hamburger menu on tablet / mobile layout.
 
 Header Colors are choosen to not disturb, and create a calm environment. Body is set to a light blue to create contrast between articles and items on the page.
-
-API End point url https://excitable-breath.flywheelsites.com/ The Homepage is Created using Fetch Url https://excitable-breath.flywheelsites.com/wp-json/wp/v2/posts/${postId}
+The Homepage is Created using Fetch Url https://exampleurl.com/wp/v2/posts/${postId}
 
 Here it post all the postIds and adds it to the slider entered which are const postIds = [71, 69, 67, 65, 63, 61, 59, 57, 55, 53, 35, 33, 30];
 
@@ -36,7 +35,7 @@ this code snippet generates HTML content for each article element, including a l
 
 Right Articles are populated with creating and appending const rightIds = [92, 95, 98];
 
-// Fetch the post data from the API endpoint         fetch(           https://excitable-breath.flywheelsites.com/wp-json/wp/v2/posts/${rightId}
+// Fetch the post data from the API endpoint         fetch(           https://exampleurl.com/wp-json/wp/v2/posts/${rightId}
 
 Here the Ahref goes to the article fetched for the option to comment on articles and create discussions.
 
