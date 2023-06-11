@@ -1,6 +1,6 @@
-# jorgenblogsemesterproject
 
-BRAINTHINK Report
+
+#BRAINTHINK Report
 
 Every page has a navigation where user can select options from; -Blog -About us -Contact us
 
